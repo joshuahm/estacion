@@ -1,0 +1,50 @@
+{
+  "jupyter.jupyterServerType": "remote",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "diffEditor.codeLens": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSaveMode": "modifications",
+  "clang-format.language.javascript.enable": false,
+  "clang-format.language.objective-c.enable": false,
+  "clang-format.language.objective-cpp.enable": false,
+  "clang-format.language.typescript.enable": false,
+  "python.languageServer": "Jedi",
+  "python.terminal.activateEnvironment": false,
+  "editor.renderWhitespace": "trailing",
+  "workbench.editor.labelFormat": "short",
+  "window.title": "${activeFolderLong}",
+  "files.trimTrailingWhitespace": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 80,
+  "python.formatting.provider": "yapf",
+  "python.linting.enabled": true,
+  "python.linting.pylintPath": "pylint",
+  "python.linting.pylintEnabled": true,
+  "python.formatting.yapfArgs": [
+      "--style",
+      "{ based_on_style: google, indent_width:2 , column_limit:80}"
+  ],
+  // Select one of:
+  // "python.pythonPath": "./tools/py/.venv/bin/python",
+  // "python.pythonPath": "./tools/py/.venv/Scripts/python",
+  "python.linting.pylintArgs": [
+    "--errors-only",
+    "--indent-string", "  ",
+    // "--load-plugins", "pylint_protobuf",
+    "--init-hook", "import sys; sys.path.append('${workspaceFolder}/tools/py/functions/protos/')"
+  ],
+  "python.linting.pylintUseMinimalCheckers": false,
+  "python.linting.lintOnSave": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python",
+  },
+  "workbench.settings.editor": "json",
+  "git.ignoreLimitWarning": true
+}

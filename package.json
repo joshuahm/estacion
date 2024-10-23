@@ -1,0 +1,83 @@
+{
+  "name": "estacion-marte",
+  "version": "1.2.0",
+  "description": "Estacion Marte",
+  "main": "index.js",
+  "author": "Joshua Maynez",
+  "private": true,
+  "dependencies": {
+    "@react-spring/parallax": "^9.4.0",
+    "@testing-library/jest-dom": "5.11.6",
+    "@testing-library/react": "11.2.2",
+    "@testing-library/user-event": "12.2.2",
+    "ajv": "^8.17.1",
+    "autoprefixer": "^9.8.6",
+    "bootstrap": "4.6.2",
+    "chart.js": "2.9.4",
+    "classnames": "2.3.1",
+    "cross-env": "^7.0.3",
+    "hex-to-css-filter": "^5.2.0",
+    "moment": "2.29.4",
+    "node-sass-package-importer": "5.3.2",
+    "nouislider": "15.4.0",
+    "perfect-scrollbar": "1.5.5",
+    "postcss": "^8.3.0",
+    "procedural-strings-js": "^1.0.0",
+    "react": ">=16.8.0",
+    "react-chartjs-2": "2.11.2",
+    "react-datetime": "3.2.0",
+    "react-dom": ">=16.8.0",
+    "react-intense": "^0.1.9",
+    "react-parallax": "^3.3.0",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "5.0.1",
+    "react-scroll-parallax": "^2.4.2",
+    "reactstrap": "8.10.0",
+    "rerousel": "^0.1.9",
+    "sass": "1.62.1",
+    "scroll-into-view-if-needed": "^2.2.28",
+    "styled-components": "^5.3.3",
+    "svg-inline-react": "^3.2.1",
+    "web-vitals": "3.3.1"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "optionalDependencies": {
+    "jquery": "3.7.0",
+    "typescript": "5.0.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "cross-env PUBLIC_URL=/ react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "compile-sass": "sass src/assets/scss/blk-design-system-react.scss src/assets/css/blk-design-system-react.css",
+    "minify-sass": "sass src/assets/scss/blk-design-system-react.scss src/assets/css/blk-design-system-react.min.css --style compressed"
+  },
+  "overrides": {
+    "svgo": "3.0.2",
+    "chokidar": "3.5.3",
+    "fsevents": "2.3.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
